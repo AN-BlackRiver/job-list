@@ -15,7 +15,11 @@ export default {
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                "arimo":["Arimo", "sans-serif"]
             },
+            fontSize: {
+                "2xs": ".625rem"
+            }
         },
     },
     plugins: [],
