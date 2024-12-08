@@ -11,7 +11,7 @@
     @vite(['resources/js/app.js','resources/css/app.css'])
     <title>Работа Уфа</title>
 </head>
-<body class="bg-black text-white font-arimo">
+<body class="bg-black text-white font-arimo pb-20">
     <div class="px-10">
         <nav class="flex justify-between items-center py-4 border-b border-white/10">
             <div class="flex justify-between items-center">

@@ -8,6 +8,8 @@
     </section>
 
     <section class="pt-10">
+
+
         <x-section-heding>Лучшие вакансии</x-section-heding>
 
         <div class="grid lg:grid-cols-3 gap-8 mt-6">
