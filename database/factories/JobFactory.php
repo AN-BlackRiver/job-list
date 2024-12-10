@@ -22,9 +22,9 @@ class JobFactory extends Factory
             'title' => $this->faker->jobTitle(),
             'salary' => $this->faker->numberBetween($min = 45000, $max = 90000),
             'location' => $this->faker->randomElement(['Удаленно', 'В офисе']),
-            'schedule' => 'Полный рабочий день',
+            'schedule' => $this->faker->randomElement(["Полный рабочий день","Частичная занятость"]),
             'url' => $this->faker->url(),
-            'featured' => false
+            'featured' => rand(0, 1),
         ];
     }
 }

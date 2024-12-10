@@ -22,15 +22,25 @@
             </div>
 
             <div class="space-x-6 font-bold">
-               <a href="">Работа</a>
+               <a href="{{route('home')}}">Работа</a>
                <a href="">Карьера</a>
                <a href="">Зарплаты</a>
                <a href="">Компании</a>
             </div>
 
-            <div>
-                <a href="">Опубликовать вакансию</a>
-            </div>
+            @auth
+                <div>
+                    <a href="/jobs/create">Опубликовать вакансию</a>
+                </div>
+            @endauth
+
+            @guest
+                <div class="space-x-6 font-bold">
+                    <a href="/login">Войти</a>
+                    <a href="/register">Зарегистрироваться</a>
+                </div>
+            @endguest
+
         </nav>
 
         <main class="mt-10 max-w-[1000px] mx-auto">
