@@ -29,8 +29,13 @@
             </div>
 
             @auth
-                <div>
+                <div class="space-x-6 font-bold flex">
                     <a href="/jobs/create">Опубликовать вакансию</a>
+                    <form method="POST" action="/logout">
+                        @csrf
+                        @method('DELETE')
+                        <button>Выйти</button>
+                    </form>
                 </div>
             @endauth
 
